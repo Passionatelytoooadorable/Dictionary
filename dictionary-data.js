@@ -32,13 +32,13 @@ btn.addEventListener("click", async () => {
             <p class="word-meaning">${main_meanings}</p>
             <p class="word-example">${example}</p>`;
             sound.setAttribute("src", `${sound1}`);
-            change_img.src = "./Dictionary-pana.png";
+            change_img.src = "Dictionary-pana.png";
         })
         .catch(() => {
             if (word === "") {
                 myrow.innerHTML = `<h4>Please Enter the word !</h4>`;
             } else {
-                change_img.src = "./Dictionary-pana (4).png";
+                change_img.src = "Dictionary-pana (4).png";
                 myrow.innerHTML = `<h3 class="word-error">Couldn't Find The Word</h3>`;
             }
         });
